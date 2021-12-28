@@ -1,0 +1,205 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    font-size: 25px;
+    color: white;
+}
+body{
+    background-color: black;
+    width: 100vw;
+}
+main{
+    background: url(bg.jpg) no-repeat center;
+    background-size: cover;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main div{
+    font-size: 2em;
+    margin: 0.5em;
+    font-weight: 700;
+    text-align: center;
+}
+main input{
+    background-color: rgba(83, 83, 83, 0.445);
+}
+main input[type="text"]{
+    height: 20px;
+    display: inline-block;
+    width: 30%;
+    border-radius: 5%/50%;
+    padding: 0.5% 3%;
+}
+nav a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    background-color: rgb(22, 21, 21);
+    height: 40px ;
+    align-items: center;
+    /* justify-content: center; */
+    position: fixed;
+    width:100%;
+    padding: 0.5% 2%;
+    justify-content: space-between;
+}
+.nav-ele{
+    /* border: 2px solid red; */
+}
+nav #logo{
+    flex: 1 ;
+    flex-shrink: 0;
+    max-width: max-content;
+    min-width: max-content;
+
+    /* min-width: 400px; */
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    transition: 0.3s;
+    /* border: 2px solid pink */
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
+    /* max-width: 30%; */
+    padding: 0 2%;
+    margin-right: 1%px;
+}
+nav ul li a{
+    color: white;
+    border: 2px white solid; 
+    padding: 3px 0.8rem;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: inline-block;
+    min-width: max-content;
+}
+nav ul li a:hover {
+    color: rgb(214, 198, 54);
+    /* border:rgb(214, 214, 54); */
+    box-shadow: 0px 0.5em 1em -0.1em rgb(177, 251, 38);
+    transform: translateY(-0.1em)
+}
+#logo:hover{
+    color: #f84646;
+    text-shadow: 0 0em 0.5em -0.1em #ff0505;
+    /* transform: translateY(-0.25em); */
+    cursor: pointer;
+}
+#store{
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#store > div{
+    display: flex;
+    /* display: inline-block; */
+    flex: 1 250px;
+    flex-direction: column;
+    /* width: 30%; */
+    max-width:50% ;
+
+    text-align: center;
+    padding:2%;
+    background-color: rgba(253, 250, 250, 0.068);
+    border-radius: 3%;
+    margin: 1.5%;
+    transition: 0.3s;
+}
+#store > div:hover{
+    color: #f84646;
+    box-shadow: 0 0.5em 0.5em -0.1em #ff0505;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+#store>div>.image{
+    width: 100%;
+    height: 45vh;
+    background-color: khaki;
+}
+div.image img{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    /* height: 2; */
+}
+#store .tag{
+    background-color: rgb(63, 63, 54);
+    margin: 4% 0;
+    padding: 1%;
+    box-sizing: border-box ;
+}
+@media (max-width: 780px){
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        position: static;
+        /* background-color: yellowgreen; */
+        height: max-content;
+    }
+    .nav-ele{
+        margin: 0.5em 0;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a{
+        margin: 0.3em 0;
+        display: inline-block;
+    }
+
+}
