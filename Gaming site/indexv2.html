@@ -8,27 +8,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylev2.css" />
   </head>
   <body>
-    <nav>
-      <div id="logo">
-        <a id="logo" class="nav-ele" href="#home">Retro realm</a>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black p-4 px-2 fixed-top"
+    >
+      <div class="container-fluid bg-black">
+        <a class="navbar-brand" id="logo" href="#">RETRO REALM</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end py-0 bg-black"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-center active" href="indexv2.html#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="indexv2.html#store"
+                >Collection</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#about"
+                >Contact us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="signup">Sign up</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul id="toggle" class="nav-ele">
-        <li><a href="#about">About</a></li>
-        <li><a href="#store">Store</a></li>
-        <li><a href="#contact">Contact us</a></li>
-        <li><a href="signup.html">Sign up</a></li>
-      </ul>
     </nav>
     <main>
       <div>Welcome to the world of</div>
       <div>RETRO REALM</div>
-      <input type="text" placeholder="Search games" />
+      <form action="" class="w-100 text-center">
+        <input type="text" class="w-50" placeholder="Search games" />
+      </form>
     </main>
 
     <section id="store">
@@ -37,7 +77,7 @@
           <img src="mario.jpg" alt="" />
         </div>
         <div class="tag">Get ready to jump</div>
-      </div> 
+      </div>
       <div>
         <div class="image">
           <img src="pop.jpg" alt="" />
@@ -63,5 +103,78 @@
         <div class="tag">Head off the Ragnarok</div>
       </div>
     </section>
+
+    <section
+      id="about"
+      class="border-top border-secondary text-center my-2 py-2"
+    >
+      RETRO REALM is part of Elite Corporation limited.
+      <div class="display-6 my-2 border-top">Our Sponsors</div>
+      <div class="container">
+        <div class="row px-3 justify-content-center">
+          <img
+            src="logos/netflix-logo-0.png"
+            class="img-fluid col-2 col-lg-1"
+            alt=""
+          />
+          <img
+            src="logos/fenerbahce-spor-kulubu-1907-transparent-logo-png-0.png"
+            class="img-fluid col-2 col-lg-1"
+            alt=""
+          />
+          <img
+            src="logos/Icon-apex-logo-png-download-25.jpg"
+            class="img-fluid col-2 col-lg-1"
+            alt=""
+          />
+          <img
+            src="logos/s-c-corinthians-paulista--1910--logo-png-0.png"
+            class="img-fluid col-2 col-lg-1"
+            alt=""
+          />
+          <img
+            src="logos/espn-logo-espn-symbol-meaning-png-logo-0.png"
+            class="img-fluid col-2 col-lg-1"
+            alt=""
+          />
+          <img
+            src="logos/wwe-network-logo-0.png"
+            class="img-fluid col-2 col-lg-1"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="my-3">
+      <h3 class="ms-3 mb-4">Reach us at:</h3>
+      <div class="container d-flex">
+        <div class="card bg-dark m-1" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Headquarters :</h5>
+
+            <p class="card-text">CDAC</p>
+            <p class="card-text">
+              Raintree Marg, near Bharati Vidyapeeth, opp. Kharghar station,
+              Sector 7, Kharghar, Navi Mumbai, Maharashtra 410210
+            </p>
+          </div>
+        </div>
+        <div class="card bg-dark m-1" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Contact Details :</h5>
+
+            <p class="card-text">Mail us:</p>
+            <p class="card-text mb-2">contact@retrorealm.com</p>
+            <p class="card-text">Phone:</p>
+            <p class="card-text">+91 985-866-5520</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
