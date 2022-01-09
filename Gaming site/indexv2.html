@@ -18,10 +18,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="stylev2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-black p-4 px-2 fixed-top"
+      class="navbar navbar-expand-lg navbar-dark bg-black p-4 px-2 sticky-top"
     >
       <div class="container-fluid bg-black">
         <a class="navbar-brand" id="logo" href="#">RETRO REALM</a>
@@ -42,12 +43,10 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-center active" href="indexv2.html#about"
-                >About</a
-              >
+              <a class="nav-link text-center active" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-center" href="indexv2.html#store"
+              <a class="nav-link active text-center" href="#store"
                 >Collection</a
               >
             </li>
@@ -56,8 +55,10 @@
                 >Contact us</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link active text-center" href="signup">Sign up</a>
+            <li id="signout" class="nav-item">
+              <a class="nav-link active text-center" href="signup.html"
+                >Sign up</a
+              >
             </li>
           </ul>
         </div>
@@ -66,7 +67,7 @@
     <main>
       <div>Welcome to the world of</div>
       <div>RETRO REALM</div>
-      <form action="" class="w-100 text-center">
+      <form id="searchBox" action="" class="w-100 text-center">
         <input type="text" class="w-50" placeholder="Search games" />
       </form>
     </main>
@@ -164,13 +165,14 @@
             <h5 class="card-title">Contact Details :</h5>
 
             <p class="card-text">Mail us:</p>
-            <p class="card-text mb-2">contact@retrorealm.com</p>
-            <p class="card-text">Phone:</p>
+            <p class="card-text">contact@retrorealm.com</p>
+            <p class="card-text mt-2">Phone:</p>
             <p class="card-text">+91 985-866-5520</p>
           </div>
         </div>
       </div>
     </section>
+    <script type="module" src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

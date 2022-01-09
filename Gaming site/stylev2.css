@@ -254,7 +254,7 @@ nav ul li a:hover {
   height: 45vh;
   background-color: khaki;
 }
-div.image img {
+.image img {
   height: inherit;
   width: inherit;
   object-fit: cover;
