@@ -1,5 +1,6 @@
 
-run following commands
+run following commands to create a server
+
 
 npm install 
 mode server/src/main.js
