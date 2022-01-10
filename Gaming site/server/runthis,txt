@@ -1,1 +1,5 @@
 
+run following commands
+
+npm install 
+mode server/src/main.js
