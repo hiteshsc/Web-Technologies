@@ -1,0 +1,15 @@
+1. npm init
+2. npm install mysql bluebird express nodemon cors
+3. create user.js for establishing database connection
+
+4. create database connection and wrap everything in async function
+5. if facing issues with id password of db, run following query
+    ALTER USER '<username>'@'localhost' IDENTIFIED WITH mysql_native_password BY '<password>' or
+    ALTER USER '<username>'@'%' IDENTIFIED WITH mysql_native_password BY '<password>'
+
+6.call function to create connection
+7. create function to fetch data from database
+8. export insert and fetch functions
+
+********* Create server************
+1.create server file
